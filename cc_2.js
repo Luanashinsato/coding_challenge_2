@@ -35,3 +35,15 @@ customers.push({
     purchaseAmount: 150
   });
 console.log("Customers List:", customers)
+
+// Task 5: Object Methods
+let order = {
+    orderId: 193,
+    customerName: "Pierina Bustamante",
+    amount: 70,
+}
+order.calculateTax = function() {
+    return this.amount * 0.10;
+};
+console.log("Order Details:", order)
+console.log("Tax Amount:", order.calculateTax());
